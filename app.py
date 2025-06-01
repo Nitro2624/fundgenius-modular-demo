@@ -16,6 +16,13 @@ risk = st.sidebar.selectbox("Risk Profile", ["Low", "Moderate", "High"])
 goal = st.sidebar.selectbox("Investment Goal", ["Retirement", "Wealth Creation", "Education", "Tax Saving", "General Investment"])
 duration = st.sidebar.slider("Investment Duration (Years)", 1, 30, 5)
 amount = st.sidebar.number_input("Investment Amount (INR)", 1000, 10000000, 100000)
+# Button and Result
+if st.button("\U0001F50D Get Fund Recommendations"):
+    category = recommend_funds(risk, duration)
+    st.subheader(f"Recommended Fund Category: {category}")
+    st.success("Suggested Funds:")
+    for fund in funds_data[category]:
+        st.markdown(f"- {fund}")
 
 # Fund recommendation
 st.header("Fund Recommendation")
