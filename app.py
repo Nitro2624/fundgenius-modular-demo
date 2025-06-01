@@ -10,7 +10,7 @@ st.title("FundGenius - AI Mutual Fund Assistant (Internal)")
 st.caption("For SBI Mutual Fund Employee Use Only")
 
 # Sidebar info
-st.sidebar.title("📋 Client Input")
+st.sidebar.title("Client Input")
 age = st.sidebar.slider("Client Age", 18, 80, 30)
 risk = st.sidebar.selectbox("Risk Profile", ["Low", "Moderate", "High"])
 goal = st.sidebar.selectbox("Investment Goal", ["Retirement", "Wealth Creation", "Education", "Tax Saving", "General Investment"])
