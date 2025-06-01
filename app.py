@@ -25,7 +25,7 @@ if st.button("\U0001F50D Get Fund Recommendations"):
 # Fund recommendation
 st.header("Fund Recommendation")
 category, suggested_funds = recommend_funds(risk, duration)
-st.success(f"Recommended Category: {category}")
+st.success(f"Recommended Category: {categories_1,category_2,category_3}")
 st.write("Suggested Funds:")
 for fund in suggested_funds:
     st.markdown(f"- {fund}")
