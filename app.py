@@ -21,7 +21,6 @@ if st.button("\U0001F50D Get Fund Recommendations"):
     category = recommend_funds(risk, duration)
     st.subheader(f"Recommended Fund Category: {category}")
     st.success("Suggested Funds:")
-    for fund in funds_data[category]:
         st.markdown(f"- {fund}")
 
 # Fund recommendation
